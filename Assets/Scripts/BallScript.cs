@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +14,7 @@ public class BallScript : MonoBehaviour
     {
         mainCamera = Camera.main;
         rigid = GetComponent<Rigidbody2D>();
+        bestScorei = PlayerPrefs.GetInt("Fry", 0);
     }
     public Text text;
     public Text bestScore;
@@ -28,7 +27,6 @@ public class BallScript : MonoBehaviour
         {
             var pos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             var hit = Physics2D.Raycast(pos, Vector2.zero, LayerMask.GetMask("Ray"));
-
 
             if (hit.collider != null)
             {
@@ -64,6 +62,7 @@ public class BallScript : MonoBehaviour
         if (collision.collider.tag == "bot")
         {
             score = 0;
+            PlayerPrefs.SetInt("Fry", bestScorei);
             flying = false;
         }
     }

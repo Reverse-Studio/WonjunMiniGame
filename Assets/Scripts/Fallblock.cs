@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Assets.Scripts;
 
 public class Fallblock : MonoBehaviour
 {
     public GameObject[] blocks;
     void Start()
     {
-
+        maxscore = PlayerPrefs.GetInt("Tetris", 0);
     }
 
     private System.Random random = new System.Random();
@@ -42,13 +39,18 @@ public class Fallblock : MonoBehaviour
         {
             if (!first)
                 score++;
+            if (maxscore < score)
+            {
+                maxscore = score;
+
+                PlayerPrefs.SetInt("Tetris", maxscore);
+            }
             maxscore = maxscore > score ? maxscore : score;
             GameObject block = blocks[random.Next(blocks.Length)];
             Instantiate(block, transform.position, Quaternion.Euler(0, 0, 0));
             spawned = true;
             first = false;
         }
-
         scoreText.text = score.ToString();
         maxScoreText.text = "Best Score : " + maxscore.ToString();
     }

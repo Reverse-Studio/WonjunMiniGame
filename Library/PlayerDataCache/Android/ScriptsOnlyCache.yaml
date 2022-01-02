@@ -10,7 +10,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -885,4 +884,4 @@ ScriptsOnlyBuild:
   - Assets/main.unity
   - Assets/ownfri.unity
   - Assets/owntris.unity
-  playerPath: C:/Users/chang/Documents/FInal.apk
+  playerPath: C:/Users/chang/Documents/MaybeFinal.apk
