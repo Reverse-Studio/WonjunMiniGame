@@ -127,7 +127,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -146,81 +146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFallTime: 0
-  death:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6810568505498340359, guid: edda381d9cda0554382931d626d568ad, type: 3}
-        m_TargetAssemblyTypeName: Assets.Scripts.RollAndFall, Assembly-CSharp
-        m_MethodName: dead
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7580615625354969867, guid: 2e5779520eb1b634b8895af670230763, type: 3}
-        m_TargetAssemblyTypeName: Assets.Scripts.RollAndFall, Assembly-CSharp
-        m_MethodName: dead
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2899948278748039412, guid: ea45d3a41c7060c438f56ceec1413764, type: 3}
-        m_TargetAssemblyTypeName: Assets.Scripts.RollAndFall, Assembly-CSharp
-        m_MethodName: dead
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6697481709692341588}
-        m_TargetAssemblyTypeName: Assets.Scripts.RollAndFall, Assembly-CSharp
-        m_MethodName: dead
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6468365455024339115, guid: dca9b967b6c19a54b8045b2f5c394e59, type: 3}
-        m_TargetAssemblyTypeName: Assets.Scripts.RollAndFall, Assembly-CSharp
-        m_MethodName: dead
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4600599087098593849, guid: 6838da5b322ec754b9727fe7f21d17b3, type: 3}
-        m_TargetAssemblyTypeName: Fallblock, Assembly-CSharp
-        m_MethodName: resetScore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &5892128094997344548
 GameObject:
   m_ObjectHideFlags: 0

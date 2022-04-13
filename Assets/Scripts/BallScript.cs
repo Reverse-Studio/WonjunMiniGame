@@ -21,10 +21,22 @@ public class BallScript : MonoBehaviour
 
     private bool flying = true;
 
+    private bool click = false;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0)) click = true;
+
+        bestScore.text = "Best Score : " + bestScorei.ToString();
+        text.text = score.ToString();
+    }
+
+    private void FixedUpdate()
+    {
+        if (click)
         {
+            click = false;
+            
             var pos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             var hit = Physics2D.Raycast(pos, Vector2.zero, LayerMask.GetMask("Ray"));
 
@@ -46,13 +58,6 @@ public class BallScript : MonoBehaviour
                 }
             }
         }
-
-        bestScore.text = "Best Score : " + bestScorei.ToString();
-        text.text = score.ToString();
-    }
-
-    private void FixedUpdate()
-    {
         if (!flying)
             rigid.velocity = Vector2.zero;
     }

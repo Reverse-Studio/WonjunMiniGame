@@ -391,6 +391,18 @@ PrefabInstance:
       propertyPath: maxScoreText
       value: 
       objectReference: {fileID: 1107748275}
+    - target: {fileID: 4600599087098593849, guid: 6838da5b322ec754b9727fe7f21d17b3, type: 3}
+      propertyPath: blocks.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600599087098593849, guid: 6838da5b322ec754b9727fe7f21d17b3, type: 3}
+      propertyPath: blocks.Array.data[5]
+      value: 
+      objectReference: {fileID: 2418727893932108023, guid: 6c1290b15ca0db16bb7266f6899380fa, type: 3}
+    - target: {fileID: 4600599087098593849, guid: 6838da5b322ec754b9727fe7f21d17b3, type: 3}
+      propertyPath: blocks.Array.data[6]
+      value: 
+      objectReference: {fileID: 61066723299910344, guid: 9b778eae7aa02d02abe0d7f88527e7d0, type: 3}
     - target: {fileID: 4600599087098593850, guid: 6838da5b322ec754b9727fe7f21d17b3, type: 3}
       propertyPath: m_Name
       value: Cursor
