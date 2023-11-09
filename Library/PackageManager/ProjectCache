@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638351155627923964
-    m_Hash: 2348877138
+      ticks: 638351159895124719
+    m_Hash: 1676936119
   m_LockFileStatus:
     m_FilePath: C:/Users/Gbunny/UnityProjects/WonjunMiniGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638351155628070867
-    m_Hash: 3466852480
+      ticks: 638351159895214731
+    m_Hash: 1540341985
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,70 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/Gbunny/UnityProjects/WonjunMiniGame/Packages
 m_EditorVersion: 2023.1.17f1 (b84c4024cd38)
 m_ResolvedPackages:
+- packageId: com.cysharp.unitask@https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+  testable: 0
+  isDirectDependency: 1
+  version: 2.5.0
+  source: 5
+  resolvedPath: C:\Users\Gbunny\UnityProjects\WonjunMiniGame\Library\PackageCache\com.cysharp.unitask@5cc97c7f00
+  assetPath: Packages/com.cysharp.unitask
+  name: com.cysharp.unitask
+  displayName: UniTask
+  author:
+    name: Cysharp, Inc.
+    email: 
+    url: https://cysharp.co.jp/en/
+  category: Task
+  type: 
+  description: Provides an efficient async/await integration to Unity.
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - async/await
+  - async
+  - Task
+  - UniTask
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 5cc97c7f0085624b6ef57853d70b404440060cef
+    revision: HEAD
+  upmReserved: 
+  assetStore:
+    productId: 
 - packageId: com.unity.2d.animation@10.0.3
   testable: 0
   isDirectDependency: 1
@@ -1062,12 +1126,12 @@ m_ResolvedPackages:
     rule.\n- Fixed Switch to changeset not working on Gluon partial workspace."}'
   assetStore:
     productId: 
-- packageId: com.unity.ide.rider@3.0.25
+- packageId: com.unity.ide.rider@3.0.26
   testable: 0
   isDirectDependency: 1
-  version: 3.0.25
+  version: 3.0.26
   source: 1
-  resolvedPath: C:\Users\Gbunny\UnityProjects\WonjunMiniGame\Library\PackageCache\com.unity.ide.rider@3.0.25
+  resolvedPath: C:\Users\Gbunny\UnityProjects\WonjunMiniGame\Library\PackageCache\com.unity.ide.rider@3.0.26
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -1148,13 +1212,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638300315270000000
+  datePublishedTicks: 638326061920000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: e103b4771a884e656407e1b7219e5e3c20222552
+    revision: 2b29b1152946c13d1ecebf6fc681a59cd8b4d399
     path: 
   unityLifecycle:
     version: 3.0.25
@@ -1167,8 +1231,8 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"- unification of functionality to  search JetBrains
-    installations and open solution and file in Rider"}'
+  upmReserved: '{"changelog":"- https://github.com/JetBrains/resharper-unity/issues/2421\n-
+    https://github.com/JetBrains/resharper-unity/issues/2422"}'
   assetStore:
     productId: 
 - packageId: com.unity.ide.visualstudio@2.0.22
@@ -1702,12 +1766,12 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-- packageId: com.unity.timeline@1.8.2
+- packageId: com.unity.timeline@1.8.6
   testable: 0
   isDirectDependency: 1
-  version: 1.8.2
+  version: 1.8.6
   source: 1
-  resolvedPath: C:\Users\Gbunny\UnityProjects\WonjunMiniGame\Library\PackageCache\com.unity.timeline@1.8.2
+  resolvedPath: C:\Users\Gbunny\UnityProjects\WonjunMiniGame\Library\PackageCache\com.unity.timeline@1.8.6
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1716,7 +1780,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: assets
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
   status: 0
@@ -1852,13 +1916,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638143790900000000
+  datePublishedTicks: 638326112870000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: a60d9f471eee76056ecbc8c94f5bec263478a9c0
+    revision: 9b8cc7590b7d733181284f1a846a02406b5524d8
     path: 
   unityLifecycle:
     version: 1.8.2
@@ -1871,9 +1935,14 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed issue where previewing the Timeline
-    would create prefab property modifications\n- Fixed issue where `ClipEditor.OnClipChanged`
-    was not invoked when changing the object assigned to a `ExposedReference<UnityEngine.Object>`."}'
+  upmReserved: '{"changelog":"### Changed\n\n- In the `Create Asset` menu, the `Signal`
+    and `Timeline` items have been moved to the `Timeline` submenu.\n\n### Fixed\n\n-
+    Fixed issue where changing the name of a group track was not undoable ([TB-218](https://issuetracker.unity3d.com/issues/timeline-track-group-renaming-doesnt-go-into-the-undo-history)).\n-
+    Fixed issue where a warning would be logged in the console for `TrackAsset` ([TB-229](https://issuetracker.unity3d.com/product/unity/issues/guid/TB-229)).\n-
+    Fixed performance regression when rebuilding the playable graph.\n- Fixed a `MissingReferenceException`
+    when editing a Timeline that is an instance of a prefab and a bound `Animator`
+    is destroyed ([TB-222](https://issuetracker.unity3d.com/issues/timeline-missingreferenceexceptions-when-undoing-add-animator-from-timeline))\n-
+    Removed warnings due to obsolete analytics API."}'
   assetStore:
     productId: 
 - packageId: com.unity.ugui@1.0.0
