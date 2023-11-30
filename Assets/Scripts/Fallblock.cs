@@ -1,24 +1,26 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Fallblock : MonoBehaviour
 {
-    public GameObject[] blocks;
-    void Start()
-    {
-        maxscore = PlayerPrefs.GetInt("Tetris", 0);
-    }
+    [SerializeField] private GameObject[] blocks;
+    [SerializeField] private TextMeshProUGUI scoreDisplay;
+    [SerializeField] private TextMeshProUGUI maxScoreDisplay;
 
     private System.Random random = new System.Random();
+
     private bool safe;
     public bool spawned = false;
     public int score = -1;
     private int maxscore = 0;
     public bool first = true;
 
-    public Text scoreText;
-    public Text maxScoreText;
-    void Update()
+    private void Start()
+    {
+        maxscore = PlayerPrefs.GetInt("Tetris", 0);
+    }
+
+    private void Update()
     {
         var x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
         transform.position = new Vector3(x, Camera.main.transform.position.y + 2, 0);
@@ -51,7 +53,8 @@ public class Fallblock : MonoBehaviour
             spawned = true;
             first = false;
         }
-        scoreText.text = score.ToString();
-        maxScoreText.text = "Best Score : " + maxscore.ToString();
+
+        scoreDisplay.text = score.ToString();
+        maxScoreDisplay.text = "Best Score : " + maxscore.ToString();
     }
 }

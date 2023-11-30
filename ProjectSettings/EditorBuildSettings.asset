@@ -6,12 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/main.unity
+    path: Assets/Scenes/Main.unity
     guid: c07bbb2262ede3e4d92c16b9e232c96e
   - enabled: 1
-    path: Assets/ownfri.unity
+    path: Assets/Scenes/Onefri.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/owntris.unity
+    path: Assets/Scenes/Onetris.unity
     guid: be651e6be209d0648b381731efeb3aaf
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
