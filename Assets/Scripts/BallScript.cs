@@ -14,11 +14,15 @@ public class BallScript : MonoBehaviour
     private int bestScore = 0;
     public float bounce;
 
-    private void Start()
+    private void Awake()
     {
         mainCamera = Camera.main;
         rigid = GetComponent<Rigidbody2D>();
-        bestScore = PlayerPrefs.GetInt("Fry", 0);
+    }
+
+    private void Start()
+    {
+        bestScore = DataManager.Instance.GetMaxScore(DataManager.Game.Bound);
     }
 
     private void Update()
@@ -49,7 +53,7 @@ public class BallScript : MonoBehaviour
         if (collision.collider.CompareTag("bot"))
         {
             score = 0;
-            PlayerPrefs.SetInt("Fry", bestScore);
+            DataManager.Instance.SetMaxScore(DataManager.Game.Bound, bestScore);
         }
     }
 }

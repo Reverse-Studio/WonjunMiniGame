@@ -17,7 +17,7 @@ public class Fallblock : MonoBehaviour
 
     private void Start()
     {
-        maxscore = PlayerPrefs.GetInt("Tetris", 0);
+        maxscore = DataManager.Instance.GetMaxScore(DataManager.Game.Tetris);
     }
 
     private void Update()
@@ -45,7 +45,7 @@ public class Fallblock : MonoBehaviour
             {
                 maxscore = score;
 
-                PlayerPrefs.SetInt("Tetris", maxscore);
+                DataManager.Instance.SetMaxScore(DataManager.Game.Tetris, maxscore);
             }
             maxscore = maxscore > score ? maxscore : score;
             GameObject block = blocks[random.Next(blocks.Length)];
